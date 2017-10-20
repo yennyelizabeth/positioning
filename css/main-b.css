@@ -1,0 +1,35 @@
+/* --------------------------------EJEMPLO B ------------------------------*/
+/* ---------------------------position:relative ------------------------------*/
+/* Defino el atributo de despliegue por bloque a los divs */
+
+div {
+  display: block;
+}
+
+
+/* Se definen atributos particulares a los IDs particulares  */
+/* Se definen atributos de position relative, que es igual a la posición por
+defecto , que respeta el flujo normal del documento pero puede acepta
+definirle modificación en la posiciones rigth, left, top, bottom, teniendo
+de referencia a su padre , en este caso el body*/
+
+#box_1 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_2 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_3 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}

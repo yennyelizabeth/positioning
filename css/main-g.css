@@ -1,0 +1,31 @@
+/* --------------------------------EJEMPLO G------------------------------*/
+/* ---------------------------position:absolute --------------------------*/
+/* Defino el atributo de despliegue por bloque a los divs */
+
+div {
+  display: block;
+}
+
+/* Se definen atributos particulares a los IDs particulares  */
+/* Se definen atributos de position , que es igual a la posición por
+defecto , que respeta el flujo normal del documento pero puede acepta
+definirle modificación en la posiciones rigth, left, top, bottom, teniendo
+de referencia a su padre , en este caso el body*/
+
+#box_1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: #44accf;
+}
+
+#box_2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: #ff9c34;
+}

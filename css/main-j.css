@@ -1,0 +1,86 @@
+/* --------------------------------EJEMPLO J------------------------------*/
+/* ---------------------------position:absolute --------------------------*/
+/* Defino el atributo de despliegue por bloque a los divs */
+
+body {
+    margin: 0;
+		font: normal 12px/18px 'Helvetica', Arial, sans-serif;
+		background: #44accf;
+}
+
+
+
+div {
+  display: block;
+}
+
+/* Las reglas de posicionamiento utilizadas en la pagina html */
+  #container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  #content {
+    position: relative;
+    padding: 20px 250px 60px 20px;
+    background: #fff;
+  }
+  #nav {
+    height: 50px;
+    background: #b7d84b;
+  }
+  #callout {
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    right: -80px;
+    width: 210px;
+    padding: 0 20px;
+    border-top: 5px solid #f95b34;
+    background: #fa8366;
+  }
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 860px;
+    padding: 0 20px;
+    background: #f36283;
+  }
+
+  /* Reglas estáticas que se aplicaran a la pagina html */
+  		#nav a {
+  			display: block;
+  			float: left;
+  			color: #fff;
+  			text-decoration: none;
+  			padding: 0 20px;
+  			line-height: 50px;
+  			border-right: 1px solid #91ab3b;
+  		}
+  		#nav a:hover {
+  			background: #91ab3b;
+  		}
+  		#callout p {
+  			color: #fff;
+  		}
+
+
+
+/* Se definen atributos particulares a los IDs particulares  */
+/* Se definen atributos de position , que es igual a la posición por
+defecto , que respeta el flujo normal del documento pero puede acepta
+definirle modificación en la posiciones rigth, left, top, bottom, teniendo
+de referencia a su padre , en este caso el body*/
+
+#box_1  #box_2 p {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#box_2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f95b34;
+  padding: 10px 0;
+}

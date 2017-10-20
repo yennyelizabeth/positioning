@@ -1,0 +1,25 @@
+
+body {
+  font-size: 20;
+  font-style: italic;
+  font-family: sans-serif;
+
+}
+
+
+#menu {
+  margin:auto;
+  border: 2px solid blue ;
+  display:block;
+  left: 600 ;
+}
+
+
+h1 ,h2 {
+   text-align: center ;
+   color: #3F51B5;
+}
+
+li {
+   align-content: center;
+}

@@ -1,0 +1,33 @@
+/* --------------------------------EJEMPLO A ------------------------------*/
+/* ---------------------------position:static ------------------------------*/
+/* Defino el atributo de despliegue por bloque a los divs */
+
+div {
+  display: block;
+}
+
+
+/* Se definen atributos particulares a los IDs particulares  */
+/* Se definen atributos de position estática, que es igual a la posición por
+defecto , que respeta el flujo normal del documento */
+
+#box_1 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_2 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_3 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}
