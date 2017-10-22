@@ -1,6 +1,11 @@
 /* --------------------------------EJEMPLO J------------------------------*/
-/* ---------------------------position:absolute --------------------------*/
+/* -----------------position: relative y absolute ------------------------*/
 /* Defino el atributo de despliegue por bloque a los divs */
+
+
+/* al elemento body padre, le margin 0 le quito el margen por defecto,
+   se define el atributo font agrupando stylo de letras y tamaño y
+   se le asigna un fondo de color */
 
 body {
     margin: 0;
@@ -8,26 +13,41 @@ body {
 		background: #44accf;
 }
 
-
-
-div {
-  display: block;
-}
-
-/* Las reglas de posicionamiento utilizadas en la pagina html */
+   /* al atributo container se le da un ancho , la cual se aplicará teniendo en
+   cuenta la referencia del elemento padre, y margin auto para que se ajuste
+   centralmente automaticamente */
   #container {
     width: 900px;
-    margin: 0 auto;
+    margin: auto;
   }
+
+  /* atributo content ( id )
+     propiedad: posición relative permite ser Estática con flujo de documento
+     pero que puede variar sus características de borde, margen, ancho y alto
+     propiedad Padding Superior= 20px, derecho= 250px, inferior= 60px,
+     izquierdo= 20px* , propiedad fondo color blanco*/
   #content {
     position: relative;
     padding: 20px 250px 60px 20px;
     background: #fff;
   }
+
+
+  /* atributo nav ( id )
+     se le da la propiedad de display block, para cambiar su naturaleza inline
+     a bloque, el alto y el fondo*/
   #nav {
+    display: block;
     height: 50px;
     background: #b7d84b;
   }
+
+  /* atributo callout ( id )
+     se le da la propiedad position absolute, puede aceptar valores top, left,
+     rigth y bottom. Este elemento no estará dentro del flujo normal de la página
+     y tomará como referencia la ventana del navegador o el elemento posicionado
+     que tenga cualquier valor de position excepto static, mas cercano si es padre
+     del elemento que queremos posicionar*/
   #callout {
     position: absolute;
     top: 100px;
@@ -38,6 +58,12 @@ div {
     border-top: 5px solid #f95b34;
     background: #fa8366;
   }
+
+  /* atributo footer ( id )
+     se le da la propiedad position fixed, tomará de referencia la ventana del navegador
+     y no respetan el tener un contenedor padre que esté posicionado, al hacer scroll en
+     la pagina, este elemento seguira en la misma posicion respecto a la ventana del na
+     vegador */
   #footer {
     position: fixed;
     bottom: 0;
@@ -47,8 +73,11 @@ div {
   }
 
   /* Reglas estáticas que se aplicaran a la pagina html */
+
+      /* al elemento a que están agrupados atraves del atributo nav, que floten,
+         perdiendo su naturaleza de inline*/
   		#nav a {
-  			display: block;
+
   			float: left;
   			color: #fff;
   			text-decoration: none;
@@ -56,31 +85,40 @@ div {
   			line-height: 50px;
   			border-right: 1px solid #91ab3b;
   		}
+
+      /*  aplica fondo al elemento a en su estado hover*/
+
   		#nav a:hover {
   			background: #91ab3b;
   		}
+
+      /*  a los elementos p agrupados por la id callout ponerle la propiedad
+      de color*/
+
   		#callout p {
   			color: #fff;
   		}
 
 
 
-/* Se definen atributos particulares a los IDs particulares  */
-/* Se definen atributos de position , que es igual a la posición por
-defecto , que respeta el flujo normal del documento pero puede acepta
-definirle modificación en la posiciones rigth, left, top, bottom, teniendo
-de referencia a su padre , en este caso el body*/
+  /* a los elementos p agrupados en los ids box_1 y box_2 , darle la propiedad
+     de ancho y margin */
 
-#box_1  #box_2 p {
-  width: 900px;
-  margin: 0 auto;
-}
+  #box_1  #box_2 p {
+    width: 900px;
+    margin: 0 auto;
+  }
 
-#box_2 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #f95b34;
-  padding: 10px 0;
-}
+
+  /*al atributo box_2 (id) se le da la propiedad position fixed, tomará de
+   referencia la ventana del navegador y no respetan el tener un contenedor
+   padre que esté posicionado, al hacer scroll en la pagina, este elemento
+   seguira en la misma posicion respecto a la ventana del navegador*/
+  #box_2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f95b34;
+    padding: 10px 0;
+  }

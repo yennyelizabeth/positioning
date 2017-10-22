@@ -1,7 +1,13 @@
-<!-- EJEMPLO I-->
-<!-- position:absolute -->
-<!-- BODY (padre) contiene 3 DIVS (hijos) los cuales están identificados
- particularmente através del ID y a su vez tienen una clase común BOX -->
+<!-- EJEMPLO J-->
+
+<!-- los elementos padres permiten contener a otros elementos con la finalidad
+de definir reglas que agrupen que sean generales-->
+
+<!-- los elementos hijos directos permiten definir estilos personalizados,
+    ya sea a nivel subgrupo o individual , Y siempre según el elemento
+    padre que los contiene, por lo que deben ser complementarias y no duplicadas
+    o contradictorias-->
+
 
 <!DOCTYPE html>
 <html>
@@ -13,19 +19,33 @@
       <link rel = "stylesheet" href ="css/main-j.css">
   </head>
 
+
+  <!-- *body es un elemento que incluye: etiqueta inicio-fin y contenido
+       tiene 1 hijo directo: 1 div id container  -->
+
+      <!-- * div con id container tiene 3 hijos directos: 1 div links,
+            1 div contenido 1 div de footer -->
+
+           <!-- *div con id contenido tiene hijos directos: 1 div callout y 9 p -->
+
   <body>
     <div id="container">
+
+        <!-- este div con id nav, tiene 5 hijos directos : a -->
     		<div id="nav">
-    			<a href="#">Link</a>
-    			<a href="#">Link</a>
-    			<a href="#">Link</a>
-    			<a href="#">Link</a>
-    			<a href="#">Link</a>
+    			<a href="#" target="_blank">Link</a>
+    			<a href="#" target="_blank">Link</a>
+    			<a href="#" target="_blank">Link</a>
+    			<a href="#" target="_blank">Link</a>
+    			<a href="#" target="_blank">Link</a>
     		</div>
+
     		<div id="content">
-    			<div id="callout">
-        				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis posuere condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vitae mollis dui. Praesent porttitor quam lorem. Phasellus ullamcorper ligula vitae augue eleifend faucibus. Donec elementum nulla eu erat feugiat nec bibendum purus facilisis. Vestibulum tincidunt, lectus sed tristique condimentum, odio justo faucibus diam, sed imperdiet metus dui non augue. Ut felis enim, accumsan id tempor vitae, rutrum ut sem. Maecenas pulvinar bibendum lectus vel malesuada. Duis sodales ultricies congue. Maecenas id diam neque. Fusce ac interdum felis. Donec dictum massa eu enim aliquam rhoncus. Donec in dui diam. Aenean nisl risus, iaculis in convallis eu, condimentum a metus. Fusce ut purus odio. Curabitur vitae enim id nisl dignissim varius vitae vel dui. Aenean scelerisque ante vitae quam tempor non dignissim mauris venenatis.</p>
-    			</div>
+
+              <!-- este div con id callout tiene un hijo : 1 p -->
+        			<div id="callout">
+            				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis posuere condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vitae mollis dui. Praesent porttitor quam lorem. Phasellus ullamcorper ligula vitae augue eleifend faucibus. Donec elementum nulla eu erat feugiat nec bibendum purus facilisis. Vestibulum tincidunt, lectus sed tristique condimentum, odio justo faucibus diam, sed imperdiet metus dui non augue. Ut felis enim, accumsan id tempor vitae, rutrum ut sem. Maecenas pulvinar bibendum lectus vel malesuada. Duis sodales ultricies congue. Maecenas id diam neque. Fusce ac interdum felis. Donec dictum massa eu enim aliquam rhoncus. Donec in dui diam. Aenean nisl risus, iaculis in convallis eu, condimentum a metus. Fusce ut purus odio. Curabitur vitae enim id nisl dignissim varius vitae vel dui. Aenean scelerisque ante vitae quam tempor non dignissim mauris venenatis.</p>
+        			</div>
         			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis posuere condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vitae mollis dui. Praesent porttitor quam lorem. Phasellus ullamcorper ligula vitae augue eleifend faucibus. Donec elementum nulla eu erat feugiat nec bibendum purus facilisis. Vestibulum tincidunt, lectus sed tristique condimentum, odio justo faucibus diam, sed imperdiet metus dui non augue. Ut felis enim, accumsan id tempor vitae, rutrum ut sem. Maecenas pulvinar bibendum lectus vel malesuada. Duis sodales ultricies congue. Maecenas id diam neque. Fusce ac interdum felis. Donec dictum massa eu enim aliquam rhoncus. Donec in dui diam. Aenean nisl risus, iaculis in convallis eu, condimentum a metus. Fusce ut purus odio. Curabitur vitae enim id nisl dignissim varius vitae vel dui. Aenean scelerisque ante vitae quam tempor non dignissim mauris venenatis.</p>
 
         			<p>Proin eleifend ornare gravida. Donec nunc ipsum, luctus eget iaculis sit amet, laoreet quis nisl. Curabitur euismod rutrum ornare. Morbi viverra rutrum purus non ullamcorper. Quisque sollicitudin elementum leo at lobortis. Vivamus nec dolor augue, sit amet blandit urna. Curabitur vitae elit id sem blandit tincidunt. Fusce aliquam sodales mauris vitae molestie. Aenean sit amet ligula sapien. Donec luctus ultrices condimentum. Fusce ac velit odio, sed luctus libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci neque, commodo quis dictum et, interdum vel diam. Curabitur congue, leo non commodo facilisis, quam magna rutrum enim, non malesuada dui mi vitae risus.</p>
@@ -43,10 +63,13 @@
         			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis posuere condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vitae mollis dui. Praesent porttitor quam lorem. Phasellus ullamcorper ligula vitae augue eleifend faucibus. Donec elementum nulla eu erat feugiat nec bibendum purus facilisis. Vestibulum tincidunt, lectus sed tristique condimentum, odio justo faucibus diam, sed imperdiet metus dui non augue. Ut felis enim, accumsan id tempor vitae, rutrum ut sem. Maecenas pulvinar bibendum lectus vel malesuada. Duis sodales ultricies congue. Maecenas id diam neque. Fusce ac interdum felis. Donec dictum massa eu enim aliquam rhoncus. Donec in dui diam. Aenean nisl risus, iaculis in convallis eu, condimentum a metus. Fusce ut purus odio. Curabitur vitae enim id nisl dignissim varius vitae vel dui. Aenean scelerisque ante vitae quam tempor non dignissim mauris venenatis.</p>
 
         			<p>Proin eleifend ornare gravida. Donec nunc ipsum, luctus eget iaculis sit amet, laoreet quis nisl. Curabitur euismod rutrum ornare. Morbi viverra rutrum purus non ullamcorper. Quisque sollicitudin elementum leo at lobortis. Vivamus nec dolor augue, sit amet blandit urna. Curabitur vitae elit id sem blandit tincidunt. Fusce aliquam sodales mauris vitae molestie. Aenean sit amet ligula sapien. Donec luctus ultrices condimentum. Fusce ac velit odio, sed luctus libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci neque, commodo quis dictum et, interdum vel diam. Curabitur congue, leo non commodo facilisis, quam magna rutrum enim, non malesuada dui mi vitae risus.</p>
-    		</div>
-    		<div id="footer">
-    			<p>Copyright &copy; 2010 - Acme Web Sites</p>
-    		</div>
+    		  </div>
+
+             <!-- este div con id footer tiene un hijo : 1 p -->
+          	 <div id="footer">
+          			<p>Copyright &copy; 2010 - Acme Web Sites</p>
+          	 </div>
+
     	</div>
 
   </body>

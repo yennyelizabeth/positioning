@@ -1,17 +1,15 @@
 /* --------------------------------EJEMPLO H2------------------------------*/
-/* ---------------------------position:absolute --------------------------*/
+/* ------------------position:relative y absolute --------------------------*/
 /* Defino el atributo de despliegue por bloque a los divs */
 
 div {
   display: block;
 }
 
-/* Se definen atributos particulares a los IDs particulares  */
-/* Se definen atributos de position , que es igual a la posición por
-defecto , que respeta el flujo normal del documento pero puede acepta
-definirle modificación en la posiciones rigth, left, top, bottom, teniendo
-de referencia a su padre , en este caso el body*/
-
+/* atributo box_1( id )
+   propiedad: posición relative permite ser Estática con flujo de documento
+   pero que puede variar sus características de borde, margen, ancho y alto
+   */
 #box_1 {
   position: relative;
   width: 200px;
@@ -19,6 +17,12 @@ de referencia a su padre , en este caso el body*/
   background: #ee3e64;
 }
 
+/* atributo box_2( id )
+   se le da la propiedad position absolute, puede aceptar valores top, left,
+   rigth y bottom. Este elemento no estará dentro del flujo normal de la página
+   y tomará como referencia la ventana del navegador o el elemento posicionado
+   que tenga cualquier valor de position excepto static, mas cercano si es padre
+   del elemento que queremos posicionar*/
 #box_2 {
   position: absolute;
   left: 100px;

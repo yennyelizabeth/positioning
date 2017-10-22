@@ -1,22 +1,23 @@
 /* --------------------------------EJEMPLO I------------------------------*/
-/* ---------------------------position:absolute --------------------------*/
+/* ---------------------------position:fixed --------------------------*/
 /* Defino el atributo de despliegue por bloque a los divs */
 
 div {
   display: block;
 }
 
-/* Se definen atributos particulares a los IDs particulares  */
-/* Se definen atributos de position , que es igual a la posición por
-defecto , que respeta el flujo normal del documento pero puede acepta
-definirle modificación en la posiciones rigth, left, top, bottom, teniendo
-de referencia a su padre , en este caso el body*/
-
+/* a los elementos p agrupados en los ids box_1 y box_2 , darle la propiedad
+   de ancho y margin */
 #box_1  #box_2 p {
   width: 900px;
   margin: 0 auto;
 }
 
+
+/*al atributo box_2 (id) se le da la propiedad position fixed, tomará de
+ referencia la ventana del navegador y no respetan el tener un contenedor
+ padre que esté posicionado, al hacer scroll en la pagina, este elemento
+ seguira en la misma posicion respecto a la ventana del navegador*/
 #box_2 {
   position: fixed;
   bottom: 0;
